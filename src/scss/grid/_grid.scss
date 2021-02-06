@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+
+  &-justify-center {
+    justify-items: center;
+  }
+
+  &-align-center {
+    align-items: center;
+  }
+
+  &-auto {
+
+    &-fit {
+      grid-template-columns: repeat(auto-fit, minmax(unquote('min(#{$minColumnSize}, 100%)'), 1fr));
+    }
+
+    &-fill {
+      grid-template-columns: repeat(auto-fill, minmax(unquote('min(#{$minColumnSize}, 100%)'), 1fr));
+    }
+  }
+
+  &-gap {
+
+    &--full {
+      gap: 1rem;
+    }
+
+    &--half {
+      gap: 0.5rem;
+    }
+  }
+}

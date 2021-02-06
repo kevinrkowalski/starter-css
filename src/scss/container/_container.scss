@@ -1,0 +1,16 @@
+.container {
+  max-width: 100%;
+
+  @include bp($desktop) {
+    max-width: ($desktop - 4rem);
+    margin: 0 auto;
+  }
+
+  @include bp($widescreen) {
+    max-width: ($widescreen - 4rem);
+  }
+
+  @include bp($highRes) {
+    max-width: ($highRes - 4rem);
+  }
+}

@@ -1,0 +1,32 @@
+.flex {
+  display: flex;
+
+  &-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &-column {
+    flex-direction: column;
+
+    &-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-justify-center {
+    justify-content: center;
+  }
+
+  &-align-center {
+    align-items: center;
+  }
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-justify-between {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,70 @@
+@use 'sass:math';
+
+@for $i from 1 through 3 {
+  $num: $i * 0.5;
+  $percentage: $i;
+
+  @if round($num) == $i {
+    $percentage: 1\/2;
+  }
+
+  .p-#{$percentage} {
+    padding: #{$num}rem;
+  }
+
+  .pt-#{$percentage} {
+    padding-top: #{$num}rem;
+  }
+
+  .pb-#{$percentage} {
+    padding-bottom: #{$num}rem;
+  }
+  
+  .ptb-#{$percentage} {
+    padding-top: #{$num}rem;
+    padding-bottom: #{$num}rem;
+  }
+
+  .pl-#{$percentage} {
+    padding-left: #{$num}rem;
+  }
+
+  .pr-#{$percentage} {
+    padding-right: #{$num}rem;
+  }
+
+  .plr-#{$percentage} {
+    padding-right: #{$num}rem;
+    padding-left: #{$num}rem;
+  }
+
+  .m-#{$percentage} {
+    margin: #{$num}rem;
+  }
+
+  .mt-#{$percentage} {
+    margin-top: #{$num}rem;
+  }
+
+  .mb-#{$percentage} {
+    margin-bottom: #{$num}rem;
+  }
+  
+  .mtb-#{$percentage} {
+    margin-top: #{$num}rem;
+    margin-bottom: #{$num}rem;
+  }
+
+  .ml-#{$percentage} {
+    margin-left: #{$num}rem;
+  }
+
+  .mr-#{$percentage} {
+    margin-right: #{$num}rem;
+  }
+
+  .mlr-#{$percentage} {
+    margin-right: #{$num}rem;
+    margin-left: #{$num}rem;
+  }
+}

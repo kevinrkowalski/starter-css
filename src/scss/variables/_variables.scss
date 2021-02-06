@@ -1,0 +1,11 @@
+// Container Breakpoints
+$tablet: 48rem; // 768px
+$desktop: 64rem; // 1024px
+$widescreen: 75rem; // 1200px
+$highRes: 87.5rem; // 1400px
+
+// Add breakpoint to list to be conditionally create media queries in _mixins
+$breakpoints: $tablet, $desktop, $widescreen, $highRes;
+
+// Columns
+$minColumnSize: 15.625rem;
