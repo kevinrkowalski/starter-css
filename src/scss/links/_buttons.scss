@@ -1,0 +1,30 @@
+.btn {
+  border: none;
+  display: inline-block;
+  font-weight: normal;
+  padding: 0.5rem 0.75rem;
+
+  & + .btn {
+    margin-left: 1rem;
+  }
+  
+  &-primary {
+    background-color: $primary;
+    color: set-color-lightness($primary);
+
+    &:hover {
+      background-color: set-hover-lightness($primary);
+      color: set-color-lightness($primary);
+    }
+  }
+  
+  &-secondary {
+    background-color: $secondary;
+    color: set-color-lightness($secondary);
+
+    &:hover {
+      background-color: set-hover-lightness($secondary);
+      color: set-color-lightness($secondary);
+    }
+  }
+}

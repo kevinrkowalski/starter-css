@@ -1,10 +1,15 @@
 @use 'sass:math';
 
-@for $i from 1 through 3 {
-  $num: $i * 0.5;
+@for $i from 0 through 3 {
+  $num: $i / 2;
   $percentage: $i;
 
-  @if round($num) == $i {
+// check if num is integer to create "1/2" in class name
+@if is-integer($num) == true {
+    $percentage: $i / 2;
+  } @else if is-integer($num) == false and $i > 1 {
+    $percentage: unquote("#{math.floor($i / 2)}-1\\/2");
+  } @else {
     $percentage: 1\/2;
   }
 

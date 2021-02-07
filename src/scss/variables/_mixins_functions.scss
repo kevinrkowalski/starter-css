@@ -1,0 +1,32 @@
+// conditionally create media queries for each breakpoint listed in _variables
+@mixin bp($point) {
+  @each $breakpoint in $breakpoints {
+    @if $point == $breakpoint {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    }
+  }
+}
+
+@function is-integer($value) {
+  @return is-number($value) and round($value) == $value;
+}
+
+@function set-color-lightness($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  }
+  @else {
+    @return #fff;
+  }
+}
+
+@function set-hover-lightness($color) {
+  @if (lightness($color) > 50) {
+    @return darken($color, 5);
+  }
+  @else {
+    @return lighten($color, 5);
+  }
+}

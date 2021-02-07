@@ -1,9 +1,9 @@
 // Variables & Mixins
 @import 'variables/variables';
-@import 'variables/mixins';
+@import 'variables/mixins_functions';
 
-// Reset
-@import 'reset/reset';
+// Global Styles / Reset
+@import 'global/global';
 
 // Container
 @import 'container/container';
@@ -16,3 +16,7 @@
 
 // Spacing (padding & margin)
 @import 'spacing/spacing';
+
+// Links & Buttons
+@import 'links/links';
+@import 'links/buttons';

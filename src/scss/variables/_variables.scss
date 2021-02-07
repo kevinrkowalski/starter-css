@@ -9,3 +9,17 @@ $breakpoints: $tablet, $desktop, $widescreen, $highRes;
 
 // Columns
 $minColumnSize: 15.625rem;
+
+// Fonts
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Colors
+$primary: #f8af1e;
+$secondary: #097380;
+
+$accent_white: #f1faee;
+$accent_blue: complement($primary);
+$accent_red: #e63946;
+
+$link_primary: $primary;
+$link_primary__hover: darken($primary, 10);
